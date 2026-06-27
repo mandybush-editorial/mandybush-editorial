@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandy Bush | Editorial & Communications</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Mandy Bush Editorial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h1>Mandy Bush Editorial</h1>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-main">Mandy Bush</span>
+                <span class="logo-sub">Editorial</span>
+            </a>
+        </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+.logo a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.logo-main {
+    font-family: "Lora", serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2f4858;
+    line-height: 1;
+}
+
+.logo-sub {
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-size: .75rem;
+    color: #6f8a7a;
+    margin-top: .35rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
 <main>
 
     <section class="hero">
