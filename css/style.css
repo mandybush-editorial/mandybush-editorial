@@ -552,6 +552,16 @@ h4 {
         margin: 0 auto;
     }
 }
+@media (max-width: 900px) {
+    .about-page-image {
+        margin-bottom: 2rem;
+    }
+
+    .hero-photo {
+        width: 280px;
+        height: 360px;
+    }
+}
 }/* ===================================
    About Page
 =================================== */
@@ -592,6 +602,14 @@ h4 {
 .about-page-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.hero-photo {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
 /* ===================================
    Contact Page
@@ -665,3 +683,4 @@ h4 {
 .hero-photo:hover {
     transform: scale(1.02);
 }
+
