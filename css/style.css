@@ -90,24 +90,57 @@ nav {
 .hero {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 6rem 2rem;
+    padding: 5rem 2rem;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
-.hero-content {
-    max-width: 700px;
+.eyebrow {
+    color: #6f8a7a;
+    font-weight: 600;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .hero h2 {
     font-family: "Lora", serif;
-    font-size: 3.2rem;
-    line-height: 1.2;
+    font-size: 3.5rem;
+    line-height: 1.15;
     color: #2f4858;
     margin-bottom: 1.5rem;
 }
 
-.hero-text {
+.hero-description {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 350px;
+    height: 450px;
+    background: #e9ece8;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6f8a7a;
+    font-weight: 600;
 }
 
 .button {
@@ -122,4 +155,14 @@ nav {
 
 .button:hover {
     background-color: #496274;
+}
+.button-secondary {
+    background: transparent;
+    color: #2f4858;
+    border: 2px solid #2f4858;
+}
+
+.button-secondary:hover {
+    background: #2f4858;
+    color: white;
 }
