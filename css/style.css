@@ -273,7 +273,7 @@ nav {
 }
 
 .about-image {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -607,7 +607,7 @@ h4 {
 }
 
 .about-page-image {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -691,3 +691,7 @@ h4 {
     transform: scale(1.02);
 }
 
+.about-grid,
+.about-page-grid {
+    display: grid !important;
+}
