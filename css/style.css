@@ -11,8 +11,8 @@
 
 body {
     font-family: "Source Sans 3", Arial, sans-serif;
-    color: #4f4f4f;
-    background-color: #faf9f6;
+    background-color: #f7f5f0;
+    color: #2f2f2f;
     line-height: 1.7;
 }
 
@@ -35,7 +35,7 @@ ul {
 
 header {
     background: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e9e4db;
 }
 
 nav {
@@ -57,7 +57,7 @@ nav {
     font-family: "Lora", serif;
     font-size: 1.7rem;
     font-weight: 600;
-    color: #2f4858;
+    color: #243447;
     line-height: 1;
 }
 
@@ -65,7 +65,7 @@ nav {
     font-size: .75rem;
     letter-spacing: .25rem;
     text-transform: uppercase;
-    color: #6f8a7a;
+    color: #7a8b7a;
     margin-top: .35rem;
 }
 
@@ -80,7 +80,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #6f8a7a;
+    color: #7a8b7a;
 }
 
 /* ===================================
@@ -99,7 +99,7 @@ nav {
 }
 
 .eyebrow {
-    color: #6f8a7a;
+    color: #7a8b7a;
     font-weight: 600;
     letter-spacing: .08rem;
     text-transform: uppercase;
@@ -110,7 +110,7 @@ nav {
     font-family: "Lora", serif;
     font-size: 3.5rem;
     line-height: 1.15;
-    color: #2f4858;
+    color: #243447;
     margin-bottom: 1.5rem;
 }
 
@@ -139,13 +139,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6f8a7a;
+    color: #7a8b7a;
     font-weight: 600;
 }
 
 .button {
     display: inline-block;
-    background-color: #2f4858;
+    background-color: #243447;
     color: white;
     padding: .9rem 1.8rem;
     border-radius: 4px;
@@ -154,16 +154,16 @@ nav {
 }
 
 .button:hover {
-    background-color: #496274;
+    background-color: #3a5166;
 }
 .button-secondary {
     background: transparent;
-    color: #2f4858;
-    border: 2px solid #2f4858;
+    color: #243447;
+    border: 2px solid #243447;
 }
 
 .button-secondary:hover {
-    background: #2f4858;
+    background: #243447;
     color: white;
 }
 /* ===================================
@@ -184,13 +184,21 @@ nav {
 .section-header h3 {
     font-family: "Lora", serif;
     font-size: 2.5rem;
-    color: #2f4858;
+    color: #243447;
     margin-bottom: 0.5rem;
+
+    white-space: normal;
+    text-align: center;
+}
+.section-header {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: #6f8a7a;
+    color: #7a8b7a;
 }
 
 .services-grid {
@@ -214,7 +222,7 @@ nav {
 
 .service-card h4 {
     font-family: "Lora", serif;
-    color: #2f4858;
+    color: #243447;
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
 }
@@ -222,4 +230,119 @@ nav {
 .service-card p {
     font-size: 1rem;
     line-height: 1.6;
+}
+/* ===================================
+   About Preview
+=================================== */
+
+.about-preview {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 350px;
+    height: 420px;
+    background: #e9ece8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a8b7a;
+    font-weight: 600;
+}
+
+.about-text h3 {
+    font-family: "Lora", serif;
+    font-size: 2.5rem;
+    color: #243447;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+/* ===================================
+   Why Work With Me
+=================================== */
+
+.why-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.why-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #e9e4db;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.why-card h4 {
+    font-family: "Lora", serif;
+    color: #243447;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.why-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* ===================================
+   Call to Action
+=================================== */
+
+.cta {
+    background: #ffffff;
+    margin: 4rem 0 0;
+    padding: 5rem 2rem;
+    border-top: 1px solid #e9e4db;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta h3 {
+    font-family: "Lora", serif;
+    font-size: 2.5rem;
+    color: #243447;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #4f4f4f;
 }
