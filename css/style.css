@@ -1,7 +1,7 @@
-/* ==========================
+/* ===================================
    Mandy Bush Editorial
    Base Styles
-========================== */
+=================================== */
 
 * {
     margin: 0;
@@ -24,52 +24,68 @@ a {
     text-decoration: none;
     color: inherit;
 }
-/* ==========================
+
+ul {
+    list-style: none;
+}
+
+/* ===================================
    Navigation
-========================== */
+=================================== */
 
 header {
     background: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 nav {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1.25rem 2rem;
+    padding: 1.5rem 2rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h1 {
-    font-family: "Lora", serif;
-    font-size: 1.5rem;
-    color: #2f4858;
+.logo a {
+    display: flex;
+    flex-direction: column;
 }
 
-nav ul {
+.logo-main {
+    font-family: "Lora", serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2f4858;
+    line-height: 1;
+}
+
+.logo-sub {
+    font-size: .75rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: #6f8a7a;
+    margin-top: .35rem;
+}
+
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-nav a {
-    font-family: "Lora", serif;
-    font-size: .95rem;
+.nav-links a {
     font-weight: 600;
     transition: color .3s ease;
 }
 
-nav a:hover {
-    color: #6b7d73;
+.nav-links a:hover {
+    color: #6f8a7a;
 }
-ul {
-    list-style: none;
-}
-/* ==========================
+
+/* ===================================
    Hero
-========================== */
+=================================== */
 
 .hero {
     max-width: 1100px;
@@ -90,25 +106,20 @@ ul {
 }
 
 .hero-text {
-    font-family: "Lora", serif;
     font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
-/* ==========================
-   Buttons
-========================== */
 
 .button {
     display: inline-block;
-    background: #2d3e50;
+    background-color: #2f4858;
     color: white;
     padding: .9rem 1.8rem;
     border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    transition: background .3s ease;
+    font-weight: 600;
+    transition: background-color .3s ease;
 }
 
 .button:hover {
-    background: #6b
+    background-color: #496274;
+}
