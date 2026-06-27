@@ -545,6 +545,13 @@ h4 {
         text-align: center;
     }
 }
+@media (max-width: 900px) {
+    .hero-photo {
+        width: 280px;
+        height: 360px;
+        margin: 0 auto;
+    }
+}
 }/* ===================================
    About Page
 =================================== */
@@ -643,4 +650,18 @@ h4 {
 
 .services-page .services-grid {
     margin-top: 2rem;
+}
+.hero-photo {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+.hero-photo {
+    transition: transform 0.3s ease;
+}
+
+.hero-photo:hover {
+    transform: scale(1.02);
 }
