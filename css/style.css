@@ -488,6 +488,28 @@ h4 {
         gap: 1rem;
         align-items: center;
     }
+    @media (max-width: 600px) {
+
+    .services-page {
+        padding: 2.5rem 0 4rem;
+    }
+
+    .services-page .service-card {
+        padding: 1.5rem;
+    }
+
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+}@media (max-width: 900px) {
+    .cta {
+        text-align: center;
+    }
+}
     @media (max-width: 900px) {
 
     .about-page-grid {
@@ -496,6 +518,30 @@ h4 {
     }
 
     .about-page-text {
+        text-align: center;
+    }
+
+    @media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-card ul {
+        text-align: left;
+        display: inline-block;
+    }
+}
+}
+@media (max-width: 900px) {
+
+    .services-page .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .services-page .service-card {
         text-align: center;
     }
 }
@@ -587,15 +633,14 @@ h4 {
 .contact-card li {
     margin-bottom: 0.5rem;
 }
-@media (max-width: 900px) {
+/* ===================================
+   Services Page
+=================================== */
 
-    .contact-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+.services-page {
+    padding: 3rem 0 5rem;
+}
 
-    .contact-card ul {
-        text-align: left;
-        display: inline-block;
-    }
+.services-page .services-grid {
+    margin-top: 2rem;
 }
