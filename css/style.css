@@ -408,11 +408,12 @@ p {
     align-items: start;
 }
 .hero-photo {
-    width: 100%;
-    height: auto !important;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
 }
 .about-page-text p {
     margin-bottom: 1.2rem;
@@ -430,15 +431,13 @@ p {
 }
 @media (max-width: 768px) {
   .about-page-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      align-items: start;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-
-  .about-page-image {
-      width: 100%;
-  }
-
+}
+.about-page-image {
+  width: 100%;
+}
   .hero-photo {
       width: 100%;
       height: auto;
