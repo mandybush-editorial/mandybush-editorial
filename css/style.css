@@ -463,6 +463,35 @@ p {
 .services-page .services-grid {
     margin-top: 2rem;
 }
+section {
+    margin: 0;
+    padding: 0;
+}
+.page-hero,
+.services-page,
+.cta {
+    padding: 4rem 0;
+}
+.cta {
+    background: var(--color-surface);
+    text-align: center;
+}
+.cta h2 {
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+}
+.cta p {
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+.services-grid {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.service-card {
+    margin-bottom: 0;
+}
 /* ===================================
    Image Styling (GLOBAL CONSOLIDATION)
 =================================== */
