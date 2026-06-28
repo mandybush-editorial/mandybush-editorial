@@ -1,7 +1,6 @@
 /* ===================================
    1. Variables
 =================================== */
-
 :root {
     --container: 1000px;
     --gutter: 2rem;
@@ -18,11 +17,9 @@
 
     --transition: 0.3s ease;
 }
-
 /* ===================================
    2. Base Styles
 =================================== */
-
 *,
 *::before,
 *::after {
@@ -30,49 +27,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: var(--font-body);
     background: var(--color-background);
     color: var(--color-text);
     line-height: 1.7;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 a {
     color: inherit;
     text-decoration: none;
     transition: color var(--transition);
 }
-
 ul {
     list-style: none;
 }
-
 .container {
     max-width: var(--container);
     margin: 0 auto;
     padding: 0 var(--gutter);
 }
-
 /* ===================================
    3. Header & Navigation
 =================================== */
-
 header {
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
 }
-
 nav {
     max-width: var(--container);
     margin: 0 auto;
@@ -82,12 +70,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo a {
     display: flex;
     flex-direction: column;
 }
-
 .logo-main {
     font-family: var(--font-heading);
     font-size: 1.7rem;
@@ -95,7 +81,6 @@ nav {
     color: var(--color-heading);
     line-height: 1;
 }
-
 .logo-sub {
     font-size: .75rem;
     letter-spacing: .25rem;
@@ -103,40 +88,33 @@ nav {
     color: var(--color-accent);
     margin-top: .35rem;
 }
-
 .nav-links {
     display: flex;
     gap: 2rem;
 }
-
 .nav-links a {
     font-weight: 600;
 }
-
 .nav-links a:hover {
     color: var(--color-accent);
 }
-
 /* ===================================
    4. Hero
 =================================== */
-
 .hero {
     padding: 3rem 0;
 }
-
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
     align-items: center;
 }
-
 .hero-text {
-    max-width: 600px;
+    max-width: 560px;
     text-align: left;
+    align-self: center;
 }
-
 .hero h2 {
     font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 3.2rem);
@@ -144,18 +122,15 @@ nav {
     color: var(--color-heading);
     margin-bottom: 1.5rem;
 }
-
 .hero-description,
 .hero-text p {
     margin-bottom: 1.75rem;
 }
-
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .eyebrow {
     color: var(--color-accent);
     font-size: 0.9rem;
@@ -164,11 +139,9 @@ nav {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
-
 /* ===================================
    Buttons
 =================================== */
-
 .button {
     display: inline-block;
     padding: 0.9rem 1.8rem;
@@ -179,18 +152,15 @@ nav {
     transition: background var(--transition),
                 transform var(--transition);
 }
-
 .button:hover {
     background: var(--color-accent);
     transform: translateY(-2px);
 }
-
 .button-secondary {
     background: transparent;
     color: var(--color-heading);
     border: 2px solid var(--color-heading);
 }
-
 .button-secondary:hover {
     background: var(--color-heading);
     color: white;
@@ -201,31 +171,26 @@ nav {
 .services {
     padding: 4rem 0;
 }
-
 .section-header {
     max-width: 900px;
     margin: 0 auto 2.5rem;
     text-align: center;
 }
-
 .section-header h3 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     color: var(--color-heading);
     margin-bottom: 0.5rem;
 }
-
 .section-header p {
     font-size: 1.1rem;
     color: var(--color-accent);
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
 .card {
     display: flex;
     flex-direction: column;
@@ -239,7 +204,6 @@ nav {
     transition: transform var(--transition),
                 box-shadow var(--transition);
 }
-
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(36, 52, 71, 0.08);
@@ -251,16 +215,13 @@ nav {
     color: var(--color-heading);
     margin-bottom: 0.75rem;
 }
-
 /* Size differences only */
 .service-card h4 {
     font-size: 1.25rem;
 }
-
 .why-card h4 {
     font-size: 1.2rem;
 }
-
 /* Shared paragraph styling */
 .service-card p,
 .why-card p {
@@ -272,27 +233,23 @@ nav {
 .about-preview {
     padding: 4rem 0;
 }
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 4rem;
     align-items: center;
 }
-
 .about-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .about-text h3 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     color: var(--color-heading);
     margin-bottom: 1.5rem;
 }
-
 .about-text p {
     margin-bottom: 1.2rem;
     line-height: 1.7;
@@ -303,13 +260,11 @@ nav {
 .why-section {
     padding: 4rem 0;
 }
-
 .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
 .card {
     display: flex;
     flex-direction: column;
@@ -323,7 +278,6 @@ nav {
     transition: transform var(--transition),
                 box-shadow var(--transition);
 }
-
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(36, 52, 71, 0.08);
@@ -335,16 +289,13 @@ nav {
     color: var(--color-heading);
     margin-bottom: 0.75rem;
 }
-
 /* Size differences only */
 .service-card h4 {
     font-size: 1.25rem;
 }
-
 .why-card h4 {
     font-size: 1.2rem;
 }
-
 /* Shared paragraph styling */
 .service-card p,
 .why-card p {
@@ -353,27 +304,23 @@ nav {
 /* ===================================
    8. Call to Action
 =================================== */
-
 .cta {
     padding: 4rem 2rem;
     margin-top: 4rem;
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
 }
-
 .cta-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-
 .cta h3 {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     color: var(--color-heading);
     margin-bottom: 1rem;
 }
-
 .cta p {
     max-width: 650px;
     margin: 0 auto 2rem;
@@ -382,11 +329,9 @@ nav {
 /* ===================================
    9. Global Typography
 =================================== */
-
 section {
     padding: 5rem 2rem;
 }
-
 h1,
 h2,
 h3,
@@ -396,23 +341,19 @@ h4 {
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
-
 h3 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
-
 h4 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
 }
-
 p {
     font-size: 1.05rem;
     line-height: 1.75;
     color: var(--color-text);
 }
-
 .hero-text,
 .about-text {
     text-align: left;
@@ -420,7 +361,6 @@ p {
 /* ===================================
    Responsive
 =================================== */
-
 @media (max-width: 900px) {
 
     .hero-grid,
@@ -479,33 +419,27 @@ p {
 /* ===================================
    About Page
 =================================== */
-
 .page-hero {
     padding: 4rem 0 2rem;
     text-align: center;
 }
-
 .page-hero h1 {
     font-family: "Lora", serif;
     font-size: 3rem;
     color: #243447;
     margin-bottom: 0.5rem;
 }
-
 .page-hero p {
     color: #7a8b7a;
     font-size: 1.2rem;
 }
-
 .about-page {
     padding: 3rem 0 5rem;
 }
-
 .about-page-text p {
     margin-bottom: 1.2rem;
     line-height: 1.8;
 }
-
 .about-page-image {
     display: flex;
     justify-content: center;
@@ -514,45 +448,37 @@ p {
 /* ===================================
    12. Contact Page
 =================================== */
-
 .contact-section {
     padding: 3rem 0 5rem;
 }
-
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 4rem;
     align-items: start;
 }
-
 .contact-text h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
-
 .contact-text p {
     margin-bottom: 1rem;
 }
-
 .contact-card {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     padding: 2rem;
     border-radius: 10px;
 }
-
 .contact-card h3 {
     font-family: var(--font-heading);
     margin-bottom: 1rem;
     color: var(--color-heading);
 }
-
 .contact-card ul {
     list-style: disc;
     padding-left: 1.2rem;
 }
-
 .contact-card li {
     margin-bottom: 0.5rem;
 }
@@ -562,11 +488,9 @@ p {
 .services-page .services-grid {
     margin-top: 2rem;
 }
-
 /* ===================================
    Image Styling (GLOBAL CONSOLIDATION)
 =================================== */
-
 .hero-photo {
     width: 350px;
     height: 450px;
@@ -575,7 +499,6 @@ p {
     display: block;
     transition: transform var(--transition);
 }
-
 .hero-photo:hover {
     transform: scale(1.02);
 }
