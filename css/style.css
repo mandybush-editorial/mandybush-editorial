@@ -415,10 +415,11 @@ p {
     display: flex;
     justify-content: center;
 }
-.about-page-image img {
-    width: 100%;
-    max-width: 360px;
-    border-radius: 12px;
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 /* ===================================
    12. Contact Page
@@ -456,6 +457,20 @@ p {
 }
 .contact-card li {
     margin-bottom: 0.5rem;
+}
+html, body {
+    height: auto;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+body {
+    margin: 0;
 }
 /* ===================================
    13. Services Page
@@ -498,7 +513,7 @@ section {
 .hero-photo {
     width: 350px;
     height: 450px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 12px;
     display: block;
     transition: transform var(--transition);
