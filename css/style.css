@@ -122,7 +122,7 @@ nav {
 =================================== */
 
 .hero {
-    padding: 4rem 0 5rem;
+    padding: 3rem 0;
 }
 
 .hero-grid {
@@ -198,9 +198,8 @@ nav {
 /* ===================================
    5. Services
 =================================== */
-
 .services {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .section-header {
@@ -270,9 +269,8 @@ nav {
 /* ===================================
    6. About Preview (Homepage)
 =================================== */
-
 .about-preview {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .about-grid {
@@ -302,9 +300,8 @@ nav {
 /* ===================================
    7. Why Work With Mandy Bush Editorial
 =================================== */
-
 .why-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .why-grid {
@@ -358,7 +355,7 @@ nav {
 =================================== */
 
 .cta {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     margin-top: 4rem;
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
