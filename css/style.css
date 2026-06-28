@@ -477,3 +477,52 @@ p {
 .hero-photo:hover {
     transform: scale(1.02);
 }
+.site-footer {
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Left side */
+.footer-left {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+/* Right side links in one row */
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+/* Links */
+.footer-link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease;
+}
+.footer-link:hover {
+    opacity: 0.6;
+}
+/* Divider */
+.footer-divider {
+    opacity: 0.4;
+}
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+    .footer-inner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
