@@ -533,3 +533,17 @@ p {
 .site-footer {
     background: var(--color-surface);
 }
+main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+main > *:last-child {
+    margin-bottom: 0;
+}
+.site-footer {
+    margin-top: 0; /* prevents double spacing */
+}
+
+main {
+    padding-bottom: 0;
+}
