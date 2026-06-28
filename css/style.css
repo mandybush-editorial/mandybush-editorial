@@ -534,11 +534,12 @@ section {
    Image Styling (GLOBAL CONSOLIDATION)
 =================================== */
 .hero-photo {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    object-fit: contain;
-    border-radius: 12px;
     display: block;
+    border-radius: 12px;
+    object-fit: contain;
     transition: transform var(--transition);
 }
 .hero-photo:hover {
@@ -623,8 +624,18 @@ footer {
   padding-right: 0;
 }
 @media (max-width: 768px) {
-  header,
-  footer {
-    width: 100vw;
+header,
+footer {
+  width: 100%;
+}
   }
+}
+@media (max-width: 768px) {
+  .hero-photo {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+html, body {
+  overflow-x: hidden;
 }
