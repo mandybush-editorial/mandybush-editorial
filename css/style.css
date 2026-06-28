@@ -245,15 +245,26 @@ nav {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(36, 52, 71, 0.08);
 }
-
-.service-card h4 {
+/* Shared card typography pattern */
+.service-card h4,
+.why-card h4 {
     font-family: var(--font-heading);
     color: var(--color-heading);
-    font-size: 1.25rem;
     margin-bottom: 0.75rem;
 }
 
-.service-card p {
+/* Size differences only */
+.service-card h4 {
+    font-size: 1.25rem;
+}
+
+.why-card h4 {
+    font-size: 1.2rem;
+}
+
+/* Shared paragraph styling */
+.service-card p,
+.why-card p {
     line-height: 1.7;
 }
 /* ===================================
@@ -320,14 +331,25 @@ nav {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(36, 52, 71, 0.08);
 }
-
+/* Shared card typography pattern */
+.service-card h4,
 .why-card h4 {
     font-family: var(--font-heading);
-    font-size: 1.2rem;
     color: var(--color-heading);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
+/* Size differences only */
+.service-card h4 {
+    font-size: 1.25rem;
+}
+
+.why-card h4 {
+    font-size: 1.2rem;
+}
+
+/* Shared paragraph styling */
+.service-card p,
 .why-card p {
     line-height: 1.7;
 }
