@@ -459,7 +459,7 @@ p {
     margin-bottom: 0.5rem;
 }
 html, body {
-    height: auto;
+    height: 100%;
 }
 body {
     min-height: 100vh;
@@ -512,7 +512,7 @@ section {
 =================================== */
 .hero-photo {
     width: 350px;
-    height: 450px;
+    height: auto;
     object-fit: contain;
     border-radius: 12px;
     display: block;
@@ -590,4 +590,18 @@ main > *:last-child {
 
 main {
     padding-bottom: 0;
+}
+header,
+footer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  header,
+  footer {
+    width: 100vw;
+  }
 }
