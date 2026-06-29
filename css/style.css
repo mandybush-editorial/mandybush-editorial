@@ -239,6 +239,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
 }
 
 .hero-photo {
@@ -247,6 +248,7 @@ h1, h2, h3, h4 {
     height: auto;
     display: block;
     border-radius: 12px;
+    object-fit: contain;
 }
 
 .hero-photo:hover {
@@ -262,10 +264,13 @@ h1, h2, h3, h4 {
         justify-content: center;
     }
 
-    .hero-photo {
-        max-width: 100%;
-        width: 100%;
-    }
+.hero-photo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: contain;
 }
 /* ===================================
    CONTACT PAGE (FIXED STRUCTURE)
@@ -292,7 +297,15 @@ h1, h2, h3, h4 {
     justify-content: space-between;
     align-items: center;
 }
+.site-footer {
+    width: 100%;
+}
 
+.footer-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
 /* ===================================
    RESPONSIVE
 =================================== */
