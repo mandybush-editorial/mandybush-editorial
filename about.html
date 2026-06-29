@@ -3,77 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>About | Mandy Bush Editorial</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <span class="logo-main">Mandy Bush</span>
-                <span class="logo-sub">Editorial</span>
-            </a>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-main">Mandy Bush</span>
+                    <span class="logo-sub">Editorial</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
 
-<section class="page-hero">
-    <div class="container">
-        <h1>About Mandy</h1>
-        <p>Clear communication is the foundation of meaningful work.</p>
-    </div>
-</section>
-
-<section class="about-page">
-    <div class="container about-page-grid">
-
-        <div class="about-page-text">
-            <p>
-                I’m a copyeditor and communications professional who helps organizations and individuals communicate with clarity, confidence, and purpose.
-            </p>
-
-            <p>
-                My work focuses on refining language, strengthening messaging, and ensuring that ideas are expressed in a way that resonates with the intended audience.
-            </p>
-
-            <p>
-                Over time, I’ve come to believe that good communication is not just about correctness. It’s about clarity, intention, and connection.
-            </p>
+    <section class="page-hero">
+        <div class="container">
+            <h1>About Mandy</h1>
+            <p>Clear communication is the foundation of meaningful work.</p>
         </div>
+    </section>
 
-        <div class="about-page-image">
-            <img src="images/workinginhomelibrary.jpg"
-                 alt="Mandy Bush working in her home library"
-                 class="hero-photo">
+    <section class="about-page">
+        <div class="container">
+            <div class="about-page-grid">
+                <div class="about-page-text">
+                    <p>
+                        I'm a copyeditor and communications professional who helps organizations and individuals communicate with clarity, confidence, and purpose.
+                    </p>
+                    <p>
+                        My work focuses on refining language, strengthening messaging, and ensuring that ideas are expressed in a way that resonates with the intended audience.
+                    </p>
+                    <p>
+                        Over time, I've come to believe that good communication is not just about correctness. It's about clarity, intention, and connection.
+                    </p>
+                </div>
+                <div class="about-page-image">
+                    <img src="images/workinginhomelibrary.jpg"
+                         alt="Mandy Bush working in her home library"
+                         class="hero-photo">
+                </div>
+            </div>
         </div>
-
-    </div>
-</section>
+    </section>
 
 </main>
-<div id="footer"></div>
 
+<div id="footer"></div>
 <script>
-fetch("/partials/footer.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
+    fetch("/partials/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
 </script>
 
 </body>
