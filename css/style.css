@@ -341,3 +341,14 @@ h1, h2, h3, h4 {
         font-size: 2.2rem;
     }
 }
+@media (max-width: 900px) {
+    .about-page-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-photo {
+        max-width: 100%;
+        width: 100%;
+    }
+}
