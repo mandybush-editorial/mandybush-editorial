@@ -90,4 +90,46 @@
     </section>
 
     <section class="why-section">
-        <div
+        <div class="container">
+            <div class="section-header">
+                <h3>Why Work With Mandy Bush Editorial</h3>
+                <p>Thoughtful, precise, and grounded in clear communication.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h4>Thoughtful Partnership</h4>
+                    <p>I take time to understand your goals so the final product reflects your intent and audience.</p>
+                </div>
+                <div class="why-card">
+                    <h4>Strategic Perspective</h4>
+                    <p>I don't just edit for correctness. I help shape messaging that works in real-world contexts.</p>
+                </div>
+                <div class="why-card">
+                    <h4>Attention to Detail</h4>
+                    <p>Consistency, clarity, and precision are at the center of everything I review and create.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h3>Ready to strengthen your message?</h3>
+            <p>Let's talk about how thoughtful editing and strategic communication can support your goals.</p>
+            <a href="contact.html" class="button">Let's Connect</a>
+        </div>
+    </section>
+
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch("/partials/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+</script>
+
+</body>
+</html>
