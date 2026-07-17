@@ -493,7 +493,22 @@ section {
     font-size: 0.95rem;
 }
 /* ===================================
-   17. Responsive
+   19. Social Links
+=================================== */
+.contact-social {
+    margin-top: 1rem;
+}
+
+.contact-social-link {
+    color: var(--color-accent);
+    transition: color var(--transition);
+}
+
+.contact-social-link:hover {
+    color: var(--color-heading);
+}
+/* ===================================
+   20. Responsive
 =================================== */
 @media (max-width: 900px) {
     .hero-grid,
