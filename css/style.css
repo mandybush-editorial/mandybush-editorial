@@ -495,17 +495,39 @@ section {
 /* ===================================
    19. Social Links
 =================================== */
-.contact-social {
-    margin-top: 1rem;
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.2rem;
 }
 
-.contact-social-link {
-    color: var(--color-accent);
-    transition: color var(--transition);
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--color-heading);
+    transition: background var(--transition), transform var(--transition);
 }
 
-.contact-social-link:hover {
-    color: var(--color-heading);
+.social-icon:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 /* ===================================
    20. Responsive
