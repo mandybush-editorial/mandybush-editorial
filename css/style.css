@@ -458,7 +458,40 @@ section {
     color: var(--color-border);
     margin: 0 0.5rem;
 }
+/* ===================================
+   18. Testimonials
+=================================== */
+.testimonials {
+    padding: 5rem 0;
+    background: var(--color-background);
+}
 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.testimonial-quote {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.95rem;
+}
 /* ===================================
    17. Responsive
 =================================== */
